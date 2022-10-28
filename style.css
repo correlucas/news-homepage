@@ -164,6 +164,11 @@ img {
   object-fit: cover;
 }
 
+.menu {
+  display: flex;
+  gap: 40px;
+}
+
 .flex {
   display: flex;
   gap: 40px;
@@ -225,7 +230,7 @@ aside {
   position: relative;
 }
 
-span {
+.decoration {
   display: flex;
   position: absolute;
   top: 0;
@@ -238,6 +243,10 @@ span {
 
 footer {
   padding-bottom: 130px;
+}
+
+.menu-btn {
+  display: none;
 }
 
 @media (max-width: 800px) {
@@ -260,6 +269,10 @@ footer {
 }
 
 @media (max-width: 620px) {
+  .menu-btn {
+    display: flex;
+  }
+
   .navigation {
     padding-block: 40px 55px;
   }
@@ -275,9 +288,59 @@ footer {
     margin-bottom: 70px;
   }
 
-  .navigation ul {
+  /* .navigation ul {
     display: none;
+  } */
+  nav {
+    position: relative;
   }
+
+  .burger-menu {
+    display: flex;
+  }
+
+  .menu-btn {
+    display: flex;
+    position: absolute;
+    opacity: 90%;
+    top: 20;
+    right: 0;
+    transform: translate(-18px, 15px);
+  }
+
+  .menu-btn::after {
+    content: url(./images/burger-menu.svg);
+    transform: translate(-18px, -15px);
+    z-index: 30;
+  }
+
+  .menu {
+    display: none;
+    position: absolute;
+    top: 105px;
+    right: 0;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 50px;
+    z-index: 1;
+    box-shadow: -7px 10px 16px 6px rgba(0, 0, 0, 0.35);
+    opacity: 90%;
+    background: linear-gradient(270deg, #F15D51 7%, #212332 7%);
+    align-items: flex-end;
+  }
+
+  nav a {
+    color: white;
+    font: 200 15px/26px 'Inter', sans-serif;
+    transition: all ease 0.5s;
+  }
+
+  /* menu burger */
+  .menu-btn:checked~.menu {
+    display: flex;
+  }
+
+  /* *** */
 
   .flex {
     display: flex;
@@ -294,5 +357,17 @@ footer {
   .flex-2x {
     display: grid;
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 320px) {
+  h1 {
+    font: 900 40px/46px 'Inter', sans-serif;
+    background: linear-gradient(180deg, #1A0000 9.07%, #343B8D 91.76%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    /* color: var(--black); */
   }
 }
