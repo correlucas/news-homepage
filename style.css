@@ -375,7 +375,7 @@ footer {
 body {
   -webkit-animation: slideIn 1s ease;
   animation: slideIn 2s ease;
-  animation-delay: 800s;
+  animation-delay: 800ms;
 }
 
 @-webkit-keyframes slideIn {
