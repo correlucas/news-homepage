@@ -21,7 +21,7 @@ This is a solution to the [News homepage challenge on Frontend Mentor](https://w
 
 ### Links
 
-- Solution URL: [Frontend Mentor Solution](https://www.frontendmentor.io/solutions/art-gallery-website-vanilla-css-custom-animations-and-hover-effects-dLv-qOWmK2)
+- Solution URL: [Frontend Mentor Solution](https://www.frontendmentor.io/solutions/news-homepage-vanilla-css-sHSnXlmlvh)
 - Live Site URL: [Live Site at Vercel](https://news-homepage-ten.vercel.app/)
 ## My process
 
